@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent-container {
+    display: grid;
+    grid-template-columns: 100px 1340px;
+    grid-template-rows: 453px 453px;
+    grid-template-areas:
+    "nav header"
+    "nav footer";
+    position: relative;
+    background-color: #EBEEF5;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar-on-the-left {
+    grid-area: nav;
+    position: absolute;
+    width: 100px;
+    height: 906px;
+    left: 0px;
+    top: calc(50% - 906px/2);
+    background-color: #F7F6FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 1s;
+}
+
+.bit-logo-image {
+    position: absolute;
+    width: 68px;
+    height: 34px;
+    left: 16px;
+    top: calc(50% - 34px/2 - 384px);
+}
+
+.line-after-bit-logo-image {
+    position: absolute;
+    width: 62.24px;
+    height: 0px;
+    left: 18px;
+    top: 110.03px;
+    border-bottom: 2px solid #C4C4C4;
+}
+
+.home-icon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 37.5px;
+    top: 158px;
+    z-index: 1;
+}
+
+.calendar-icon {
+    position: absolute;
+    height: 25px;
+    right: 37.5px;
+    bottom: 648px;
+    z-index: 1;
+}
+
+.dices-icon {
+    position: absolute;
+    height: 25px;
+    right: 37.5px;
+top: calc(50% - 25px/2 - 148.5px);
+z-index: 1;
+}
+
+.joystick-icon {
+    position: absolute;
+    height: 25px;
+    right: 30px;
+    top: 351px;
+    z-index: 1;
+}
+
+.main-content-in-the-middle {
+    grid-area: header;
+    background-color: var(--main);
+}
+
+.bottom-footer {
+    grid-area: footer;
+    background-color: var(--main);
+}
+
+footer {
+    position: absolute;
+    width: 184px;
+    height: 24px;
+    left: 626px;
+    top: 882px;
+
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #02577A;
+}
+
+.line-on-top-of-copyright-symbol {
+    position: absolute;
+    width: 346.01px;
+    height: 0px;
+    left: -85px;
+    bottom: 35px;
+    border-top: 2px solid #02577A;
+}
+
+.navbar-on-the-left:hover {
+    grid-area: nav;
+    position: absolute;
+    width: 206px;
+    height: 906px;
+    left: 0px;
+    top: calc(50% - 906px/2);
+    background: #F7F6FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
